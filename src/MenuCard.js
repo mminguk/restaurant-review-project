@@ -1,4 +1,4 @@
-function Card(props){
+function MenuCard(props){
     return (
         <div className='card'>
             <img src={props.image} alt="menu" />
@@ -7,4 +7,4 @@ function Card(props){
     );
 }
 
-export default Card;
+export default MenuCard;

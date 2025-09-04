@@ -1,4 +1,5 @@
-import Card from "./Card";
+import MenuCard from "./MenuCard";
+import RestaurantCard from "./components/RestaurantCard";
 function Article(){
     return (
         <article>
@@ -11,25 +12,25 @@ function Article(){
             </div>
             <span><h2>메뉴별 맛집 모음</h2></span>
             <div id="menu-list">
-              <Card image={`${process.env.PUBLIC_URL}/assets/menu1.jpg`} name="치킨" />
-              <Card image={`${process.env.PUBLIC_URL}/assets/menu2.jpg`} name="피자" />
-              <Card image={`${process.env.PUBLIC_URL}/assets/menu3.jpg`} name="분식" />
-              <Card image={`${process.env.PUBLIC_URL}/assets/menu4.jpg`} name="중식" />
+              <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu1.jpg`} name="치킨" />
+              <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu2.jpg`} name="피자" />
+              <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu3.jpg`} name="분식" />
+              <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu4.jpg`} name="중식" />
             </div>
           <span><h2>오늘의 추천 맛집</h2></span>
           <div id='recommand'>
-            <div className='card'>
-                <img src={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} alt="matzip" />
-                <h4>00치킨</h4>
-                <p>#치킨</p>
-                <p>00시 00동</p>
-            </div>
-            <div className='card'>
-                <img src={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} alt="matzip" />
-                <h4>00치킨</h4>
-                <p>#치킨</p>
-                <p>00시 00동</p>
-            </div>
+            <RestaurantCard 
+              image={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} 
+              title="봉명치킨"
+              hashtag="#치킨"
+              address="충청남도 천안시 동남구 봉정로 34"
+            />
+            <RestaurantCard 
+              image={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} 
+              title="청화집"
+              hashtag="#순대국밥"
+              address="충청남도 천안시 동남구 병천면"
+            />
           </div>
           <span><h2>최근에 개업한 식당</h2></span>
           <div id="new-restaurant">

@@ -1,21 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './Nav';
-import Article from './Article';
-import Footer from './footer';
-import AppRouter from './AppRouter';
-import { Route,Routes } from 'react-router-dom';
+import Korea from './pages/Korea';
+import China from './pages/China';
+import Japan from './pages/Japan';
+import Weston from './pages/Weston';
+import { Route,Routes, BrowserRouter } from 'react-router-dom';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
-    <>
-      <div id="page">
-        <Nav></Nav>
-        <Article></Article>
-        <Footer></Footer>
-      </div>
-      <AppRouter></AppRouter>
-    </>
+    <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<MainPage />}></Route>
+                <Route path="/Korea" element={<Korea />}></Route>
+                <Route path="/China" element={<China />}></Route>
+                <Route path="/Japan" element={<Japan />}></Route>
+                <Route path="/weston" element={<Weston />}></Route>
+            </Routes>
+    </BrowserRouter>
   );
 }
 
