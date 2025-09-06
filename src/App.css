@@ -38,7 +38,7 @@ nav{
     justify-content: space-evenly;
 }
 #page{
-    height: 800px;
+    min-height: calc(100%-71px);
 }
 #article-top{
     text-align: center;
@@ -62,6 +62,7 @@ nav{
 }
 #recommand{
     display: flex;
+    overflow-x: scroll;
     margin-top: 10px;
 }
 #new-restaurant{
@@ -72,8 +73,15 @@ nav{
 
 }
 
+#footer-wrap{
+    height: auto;
+    min-height: 100%;
+}
+
 footer{
     padding: 10px;
     text-align: center;
     background-color: lightgray;
+    height: 50px;
+    position: relative;
 }

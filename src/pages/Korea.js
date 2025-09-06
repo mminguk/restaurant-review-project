@@ -1,7 +1,10 @@
 import Nav from '../Nav';
 import MenuCard from '../MenuCard';
 import RestaurantCard from '../components/RestaurantCard';
+import Footer from '../footer';
+import { Link } from 'react-router-dom';
 import '../App.css';
+import { korea, korea_menu } from '../data/data';
 function Korea(){
     return <>
         <Nav />
@@ -14,19 +17,18 @@ function Korea(){
         </div>
         <span><h2>메뉴별 맛집 모음</h2></span>
         <div id="menu-list">
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu1.jpg`} name="찌개/찜" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu2.jpg`} name="백반" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu2.jpg`} name="한정식" />
+            {korea_menu.map((item)=>(
+                <MenuCard  key={item.id} {...item} />
+
+            ))}
         </div>
-        <span><h2>오늘의 추천 맛집</h2></span>
+        <span><h2>맛집 추천</h2></span>
         <div id="recommand">
-            <RestaurantCard 
-              image={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} 
-              title="정희백반"
-              hashtag="#백반"
-              address="충청남도 천안시 서북구 두정동"
-            />
+            {korea.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
         </div>
+        <Footer />
     </>
 }
 
