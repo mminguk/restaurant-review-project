@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 function MenuCard(props){
     return (
-        <div className='card'>
+        <Link to={`/DetailPage/${props.id}`} className='card'>
             <img src={props.image} alt="menu" />
             <p>{props.name}</p>
-        </div>
+        </Link>
     );
 }
 

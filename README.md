@@ -1,4 +1,4 @@
-#Hello my Project
-#맛집 소개 사이트 프로젝트
-#9/3 파일 생성 및 기본 틀 만들기
-#9/4 리액트 라우터를 사용해서 페이지 제작
+# Hello my Project
+# 맛집 소개 사이트 프로젝트
+# 사용 기술
+### HTML, CSS, JAVASCRIPT, React

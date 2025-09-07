@@ -2,6 +2,7 @@ import Nav from "../Nav";
 import MenuCard from "../MenuCard";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
+import { weston } from "../data/data";
 function Weston(){
     return (
         <>
@@ -13,20 +14,30 @@ function Weston(){
                 <button>검색</button>
               </div>
         </div>
-        <span><h2>메뉴별 맛집 모음</h2></span>
-        <div id="menu-list">
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu1.jpg`} name="파스타" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu2.jpg`} name="피자" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu3.jpg`} name="리조또" />
-        </div>
-        <span><h2>맛집 추천</h2></span>
+        <span><h1>메뉴별 맛집 모음</h1></span>
+        <span><h2>파스타</h2></span>
         <div id="recommand">
-            <RestaurantCard 
-              image={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} 
-              title="00파스타"
-              hashtag="#파스타"
-              address="00시 00구 00동"
-            />
+            {weston.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
+        </div>
+        <span><h2>피자</h2></span>
+        <div id="recommand">
+            {weston.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
+        </div>
+        <span><h2>커리</h2></span>
+        <div id="recommand">
+            {weston.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
+        </div>
+        <span><h2>쌀국수</h2></span>
+        <div id="recommand">
+            {weston.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
         </div>
         <Footer />
     </>

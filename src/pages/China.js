@@ -3,6 +3,7 @@ import MenuCard from '../MenuCard';
 import RestaurantCard from '../components/RestaurantCard';
 import Footer from '../footer';
 import '../App.css';
+import { china } from '../data/data';
 
 function China(){
     return <>
@@ -14,20 +15,24 @@ function China(){
                 <button>검색</button>
               </div>
         </div>
-        <span><h2>메뉴별 맛집 모음</h2></span>
-        <div id="menu-list">
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu1.jpg`} name="짜장면" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu2.jpg`} name="마라탕" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu3.jpg`} name="짬뽕" />
-        </div>
-        <span><h2>맛집 추천</h2></span>
+        <span><h1>메뉴별 맛집 추천</h1></span>
+        <span><h2>짜장면 & 짬뽕</h2></span>
         <div id="recommand">
-            <RestaurantCard 
-              image={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} 
-              title="00반점"
-              hashtag="#짜장면"
-              address="00시 00구 00동"
-            />
+          {china.map((item)=>(
+            <RestaurantCard key={item.id} {...item} />
+          ))}
+        </div>
+        <span><h2>마라탕</h2></span>
+        <div id="recommand">
+          {china.map((item)=>(
+            <RestaurantCard key={item.id} {...item} />
+          ))}
+        </div>
+        <span><h2>기타</h2></span>
+        <div id="recommand">
+          {china.map((item)=>(
+            <RestaurantCard key={item.id} {...item} />
+          ))}
         </div>
         <Footer />
     </>

@@ -2,6 +2,7 @@ import Nav from "../Nav";
 import MenuCard from "../MenuCard";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
+import { dessert } from "../data/data";
 function Dessert(){
     return (
         <>
@@ -13,20 +14,24 @@ function Dessert(){
                 <button>검색</button>
               </div>
         </div>
-        <span><h2>메뉴별 카페 모음</h2></span>
-        <div id="menu-list">
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu1.jpg`} name="아메리카노" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu2.jpg`} name="빵" />
-            <MenuCard image={`${process.env.PUBLIC_URL}/assets/menu3.jpg`} name="라떼" />
-        </div>
-        <span><h2>카페 추천</h2></span>
+        <span><h1>메뉴별 카페 추천</h1></span>
+        <span><h2>커피 & 티</h2></span>
         <div id="recommand">
-            <RestaurantCard 
-              image={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} 
-              title="00카페"
-              hashtag="#커피"
-              address="00시 00구 00동"
-            />
+            {dessert.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
+        </div>
+        <span><h2>빵 & 케이크</h2></span>
+        <div id="recommand">
+            {dessert.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
+        </div>
+        <span><h2>티라미수</h2></span>
+        <div id="recommand">
+            {dessert.map((item)=>(
+              <RestaurantCard key={item.id} {...item} />
+            ))}
         </div>
         <Footer />
     </>

@@ -26,7 +26,7 @@
     padding: 0;
     font-family: 'GMarketSans';
 }
-a{
+nav a{
     text-decoration: none;
     color: white;
 }
@@ -47,6 +47,23 @@ nav{
     background-image: url('../public/assets/main-banner.jpg');
 }
 
+#article-search{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255,.4);
+}
+
+#article-search input[type='text']{
+    margin: 10% auto;
+    width: 50%;
+    height: 30px;
+}
+#article-search button{
+    width: 25%;
+    height: 35px;
+}
+
 #page-nav{
     background-color: black;
     padding: 10px;
@@ -62,7 +79,6 @@ nav{
 }
 #recommand{
     display: flex;
-    overflow-x: scroll;
     margin-top: 10px;
 }
 #new-restaurant{
@@ -70,7 +86,8 @@ nav{
 }
 .card{
     padding: 5px;
-
+    color: black;
+    text-decoration: none;
 }
 
 #footer-wrap{
@@ -84,4 +101,7 @@ footer{
     background-color: lightgray;
     height: 50px;
     position: relative;
+}
+#map{
+    width:500px;height:400px;
 }
