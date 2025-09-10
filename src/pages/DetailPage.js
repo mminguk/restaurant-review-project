@@ -6,7 +6,7 @@ function DetailPage(){
     return <>
         <Nav />
         <div id="article-top">
-              <h1>가게상호명</h1>
+            <h1>가게상호명</h1>
         </div>
         <div id="article-middle">
             <img src={`${process.env.PUBLIC_URL}/assets/matzip1.jpg`} alt="가게사진" width='300px' />
@@ -24,6 +24,10 @@ function DetailPage(){
             <div id='restaurant-review'>
                 <span id="review-border"><h3>리뷰</h3></span>
                 <div id="review-container">
+                    <div className='review'>
+                        <h4>000</h4>
+                        <p>맛있습니다!! 또 오겠습니다</p>
+                    </div>
                     <div className='review'>
                         <h4>000</h4>
                         <p>맛있습니다!! 또 오겠습니다</p>

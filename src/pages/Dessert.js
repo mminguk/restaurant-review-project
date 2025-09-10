@@ -1,8 +1,8 @@
 import Nav from "../Nav";
-import MenuCard from "../MenuCard";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
-import { dessert } from "../data/data";
+import { coffeeandtea } from "../data/dessert-data";
+import { BbangandCake } from "../data/dessert-data";
 function Dessert(){
     return (
         <>
@@ -17,19 +17,13 @@ function Dessert(){
         <span><h1>메뉴별 카페 추천</h1></span>
         <span><h2>커피 & 티</h2></span>
         <div id="recommand">
-            {dessert.map((item)=>(
+            {coffeeandtea.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>
         <span><h2>빵 & 케이크</h2></span>
         <div id="recommand">
-            {dessert.map((item)=>(
-              <RestaurantCard key={item.id} {...item} />
-            ))}
-        </div>
-        <span><h2>티라미수</h2></span>
-        <div id="recommand">
-            {dessert.map((item)=>(
+            {BbangandCake.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>

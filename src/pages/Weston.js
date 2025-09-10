@@ -1,8 +1,9 @@
 import Nav from "../Nav";
-import MenuCard from "../MenuCard";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
-import { weston } from "../data/data";
+import { pasta } from "../data/weston-data";
+import { pizza } from "../data/weston-data";
+import { india } from "../data/weston-data";
 function Weston(){
     return (
         <>
@@ -17,25 +18,19 @@ function Weston(){
         <span><h1>메뉴별 맛집 모음</h1></span>
         <span><h2>파스타</h2></span>
         <div id="recommand">
-            {weston.map((item)=>(
+            {pasta.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>
         <span><h2>피자</h2></span>
         <div id="recommand">
-            {weston.map((item)=>(
+            {pizza.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>
-        <span><h2>커리</h2></span>
+        <span><h2>인도요리</h2></span>
         <div id="recommand">
-            {weston.map((item)=>(
-              <RestaurantCard key={item.id} {...item} />
-            ))}
-        </div>
-        <span><h2>쌀국수</h2></span>
-        <div id="recommand">
-            {weston.map((item)=>(
+            {india.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>

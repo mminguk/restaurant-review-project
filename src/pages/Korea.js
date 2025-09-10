@@ -2,7 +2,9 @@ import Nav from '../Nav';
 import RestaurantCard from '../components/RestaurantCard';
 import Footer from '../footer';
 import '../App.css';
-import { korea } from '../data/data';
+import { jjgae } from '../data/korea-data';
+import { baekban } from '../data/korea-data';
+import { meat } from '../data/korea-data';
 function Korea(){
     return <>
         <Nav />
@@ -16,19 +18,19 @@ function Korea(){
         <span><h1>메뉴별 맛집 추천</h1></span>
         <span><h2>찌개류</h2></span>
         <div id="recommand">
-            {korea.map((item)=>(
+            {jjgae.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>
         <span><h2>백반</h2></span>
         <div id="recommand">
-            {korea.map((item)=>(
+            {baekban.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>
         <span><h2>육류</h2></span>
         <div id="recommand">
-            {korea.map((item)=>(
+            {meat.map((item)=>(
               <RestaurantCard key={item.id} {...item} />
             ))}
         </div>

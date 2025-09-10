@@ -1,8 +1,10 @@
 import Nav from "../Nav";
-import MenuCard from "../MenuCard";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
-import { japan } from "../data/data";
+import { donkkas } from "../data/japan-data";
+import { lamen } from "../data/japan-data";
+import { sushi } from "../data/japan-data";
+
 function Japan(){
     return (
         <>
@@ -17,19 +19,19 @@ function Japan(){
         <span><h1>메뉴별 맛집 추천</h1></span>
         <span><h2>돈카츠</h2></span>
         <div id="recommand">
-          {japan.map((item)=>(
+          {donkkas.map((item)=>(
             <RestaurantCard key={item.id} {...item} />
           ))}
         </div>
         <span><h2>라멘</h2></span>
         <div id="recommand">
-            {japan.map((item)=>(
+            {lamen.map((item)=>(
             <RestaurantCard key={item.id} {...item} />
           ))}
         </div>
         <span><h2>스시</h2></span>
         <div id="recommand">
-            {japan.map((item)=>(
+            {sushi.map((item)=>(
             <RestaurantCard key={item.id} {...item} />
           ))}
         </div>

@@ -1,7 +1,11 @@
 import Nav from '../Nav';
 import Footer from '../footer';
 import RestaurantCard from '../components/RestaurantCard';
-import { korea } from '../data/data';
+import { korea } from '../data/korea-data';
+import { china } from '../data/china-data';
+import { japan } from '../data/japan-data';
+import { weston } from '../data/weston-data';
+import { dessert } from '../data/dessert-data';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -32,28 +36,28 @@ function MainPage(){
           </div>
           <span><h2>인기 있는 중식 맛집</h2></span>
           <div id='recommand'>
-            {korea.map((item)=>(
+            {china.map((item)=>(
                 <RestaurantCard key={item.id} {...item} />
               ))}
               <button onClick={()=>{onClickHandler('China')}}>더보기</button>
           </div>
           <span><h2>인기 있는 일식 맛집</h2></span>
           <div id='recommand'>
-            {korea.map((item)=>(
+            {japan.map((item)=>(
                 <RestaurantCard key={item.id} {...item} />
               ))}
               <button onClick={()=>{onClickHandler('Japan')}}>더보기</button>
           </div>
           <span><h2>인기 있는 양식 맛집</h2></span>
           <div id='recommand'>
-            {korea.map((item)=>(
+            {weston.map((item)=>(
                 <RestaurantCard key={item.id} {...item} />
               ))}
               <button onClick={()=>{onClickHandler('Weston')}}>더보기</button>
           </div>
           <span><h2>인기 있는 디저트 맛집</h2></span>
           <div id='recommand'>
-            {korea.map((item)=>(
+            {dessert.map((item)=>(
                 <RestaurantCard key={item.id} {...item} />
               ))}
               <button onClick={()=>{onClickHandler('Dessert')}}>더보기</button>

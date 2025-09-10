@@ -1,9 +1,11 @@
 import Nav from '../Nav';
-import MenuCard from '../MenuCard';
 import RestaurantCard from '../components/RestaurantCard';
 import Footer from '../footer';
 import '../App.css';
-import { china } from '../data/data';
+import { Jjangmen_Jjambong } from '../data/china-data';
+import { malatang } from '../data/china-data';
+import { maindesh } from '../data/china-data';
+
 
 function China(){
     return <>
@@ -18,19 +20,19 @@ function China(){
         <span><h1>메뉴별 맛집 추천</h1></span>
         <span><h2>짜장면 & 짬뽕</h2></span>
         <div id="recommand">
-          {china.map((item)=>(
+          {Jjangmen_Jjambong.map((item)=>(
             <RestaurantCard key={item.id} {...item} />
           ))}
         </div>
         <span><h2>마라탕</h2></span>
         <div id="recommand">
-          {china.map((item)=>(
+          {malatang.map((item)=>(
             <RestaurantCard key={item.id} {...item} />
           ))}
         </div>
         <span><h2>기타</h2></span>
         <div id="recommand">
-          {china.map((item)=>(
+          {maindesh.map((item)=>(
             <RestaurantCard key={item.id} {...item} />
           ))}
         </div>
