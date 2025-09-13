@@ -1,8 +1,7 @@
 import Footer from "../footer";
 import Nav from "../Nav";
 
-
-function DetailPage(){
+function DetailPage({title, address}){
     return <>
         <Nav />
         <div id="article-top">
