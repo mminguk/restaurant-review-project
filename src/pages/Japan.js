@@ -1,38 +1,22 @@
 import Nav from "../Nav";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
-import { donkkas } from "../data/japan-data";
-import { lamen } from "../data/japan-data";
-import { sushi } from "../data/japan-data";
-
+import '../styles/Category.css';
+import { japan } from "../data/japan-data";
 function Japan(){
     return (
         <>
         <Nav />
-        <div id="article-top">
+        <div id="category-article-top">
               <h1>천안 일식 맛집 모음</h1>
-              <div id="article-search">
+              <div id="category-article-search">
                 <input type="text" placeholder='검색어를 입력해 주세요'/>
                 <button>검색</button>
               </div>
         </div>
-        <span><h1>메뉴별 맛집 추천</h1></span>
-        <span><h2>돈카츠</h2></span>
         <div id="recommand">
-          {donkkas.map((item)=>(
-            <RestaurantCard key={item.id} {...item} />
-          ))}
-        </div>
-        <span><h2>라멘</h2></span>
-        <div id="recommand">
-            {lamen.map((item)=>(
-            <RestaurantCard key={item.id} {...item} />
-          ))}
-        </div>
-        <span><h2>스시</h2></span>
-        <div id="recommand">
-            {sushi.map((item)=>(
-            <RestaurantCard key={item.id} {...item} />
+          {japan.map((item)=>(
+            <RestaurantCard key={item.id} {...item} category="Japan" />
           ))}
         </div>
         <Footer />

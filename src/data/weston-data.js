@@ -3,162 +3,45 @@ export const weston=[
     {
         id:1,
         image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'롤링파스타',
+        title:'더몰트하우스',
         hashtag:'#파스타',
-        address:'00시 00구 00동'
+        address:'천안시 서북구 불당동 1683'
     },
     {
         id:2,
         image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'00피자',
-        hashtag:'#피자',
-        address:'00시 00구 00동'
+        title:'크레인파스타 불당본점',
+        hashtag:'#파스타',
+        address:'천안시 서북구 불당동 1765'
     },
     {
         id:3,
         image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'00커리',
-        hashtag:'#커리',
-        address:'00시 00구 00동'
+        title:'사생활',
+        hashtag:'#파스타',
+        address:'천안시 서북구 불당동 1715 1층'
     },
     {
         id:4,
         image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'쌀국수',
-        hashtag:'#쌀국수',
-        address:'00시 00구 00동'
+        title:'우화',
+        hashtag:'#파스타',
+        address:'천안시 서북구 두정동 778'
     },
     {
         id:5,
         image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'00인도요리',
-        hashtag:'#인도요리',
-        address:'00시 00구 00동'
+        title:'실버래빗',
+        hashtag:'#파스타',
+        address:'천안시 서북구 불당동 1637'
     },
     {
         id:6,
         image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'맛있는파스타',
-        hashtag:'#파스타',
-        address:'00시 00구 00동'
+        title:'알토(Alto)',
+        hashtag:'#피자',
+        address:' 천안시 동남구 삼룡동 504'
     }
 ]
 
-//메뉴별
-//1. 파스타
-export const pasta=[
-    {
-        id:1,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'롤링파스타',
-        hashtag:'#파스타',
-        address:'00시 00구 00동'
-    },
-    {
-        id:2,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'00파스타',
-        hashtag:'#파스타',
-        address:'00시 00구 00동'
-    },
-    {
-        id:3,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'이탈리안파스타',
-        hashtag:'#파스타',
-        address:'00시 00구 00동'
-    },
-    {
-        id:4,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'고오급스파게티',
-        hashtag:'#파스타',
-        address:'00시 00구 00동'
-    },
-    {
-        id:5,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'좋은파스타',
-        hashtag:'#파스타',
-        address:'00시 00구 00동'
-    },
-]
-
-//2. 피자
-export const pizza=[
-    {
-        id:1,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'00피자',
-        hashtag:'#피자',
-        address:'00시 00구 00동'
-    },
-    {
-        id:2,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'로마피자',
-        hashtag:'#피자',
-        address:'00시 00구 00동'
-    },
-    {
-        id:3,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'거대피자',
-        hashtag:'#피자',
-        address:'00시 00구 00동'
-    },
-    {
-        id:4,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'피자헛',
-        hashtag:'#피자',
-        address:'00시 00구 00동'
-    },
-    {
-        id:5,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'피자대학',
-        hashtag:'#피자',
-        address:'00시 00구 00동'
-    },
-]
-
-//3. 인도음식
-export const india=[
-    {
-        id:1,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'00커리',
-        hashtag:'#커리',
-        address:'00시 00구 00동'
-    },
-    {
-        id:2,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'인도요리전문점',
-        hashtag:'#인도요리',
-        address:'00시 00구 00동'
-    },
-    {
-        id:3,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'천안을대표하는커리',
-        hashtag:'#커리',
-        address:'00시 00구 00동'
-    },
-    {
-        id:4,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'매우맛있는커리',
-        hashtag:'#커리',
-        address:'00시 00구 00동'
-    },
-    {
-        id:5,
-        image:`${process.env.PUBLIC_URL}/assets/matzip1.jpg`,
-        title:'인도요리오마카세',
-        hashtag:'#커리',
-        address:'00시 00구 00동'
-    }
-]
 

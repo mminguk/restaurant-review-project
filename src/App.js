@@ -19,7 +19,7 @@ function App() {
                 <Route path="/Japan" element={<Japan />}></Route>
                 <Route path="/Weston" element={<Weston />}></Route>
                 <Route path="/Dessert" element={<Dessert />}></Route>
-                <Route path="/DetailPage/:PageId" element={<DetailPage />}></Route>
+                <Route path="/:Category/DetailPage/:PageId" element={<DetailPage />}></Route>
             </Routes>
     </BrowserRouter>
   );

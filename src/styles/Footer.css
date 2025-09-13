@@ -1,0 +1,12 @@
+#footer-wrap{
+    height: auto;
+    min-height: 100%;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    height: 50px;
+    position: relative;
+}

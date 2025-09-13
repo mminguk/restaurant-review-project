@@ -26,17 +26,7 @@
     padding: 0;
     font-family: 'GMarketSans';
 }
-nav a{
-    text-decoration: none;
-    color: white;
-}
-li{
-    list-style: none;
-}
-nav{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 #page{
     min-height: calc(100%-71px);
 }
@@ -50,7 +40,7 @@ nav{
 #article-search{
     width: 400px;
     height: 200px;
-    margin: 0 auto;
+    margin: 10% auto;
     background-color: rgba(255, 255, 255,.4);
 }
 
@@ -68,22 +58,11 @@ nav{
     background-color: black;
     padding: 10px;
 }
-#menu-list{
-    display: flex;
-}
-#menu-list img {
-    border-radius: 50%;
-}
-#menu-list .card{
-    text-align: center;
-}
+
 #recommand{
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
-}
-#new-restaurant{
-    display: flex;
 }
 .card{
     width: 150px;
@@ -93,39 +72,4 @@ nav{
     word-break: break-all;
 }
 
-#footer-wrap{
-    height: auto;
-    min-height: 100%;
-}
 
-footer{
-    padding: 10px;
-    text-align: center;
-    background-color: lightgray;
-    height: 50px;
-    position: relative;
-}
-#restaurant-menu {
-    width: 500px;
-    height: 300px;
-    margin: 0 auto;
-}
-#article-middle{
-    text-align: center;
-}
-#restaurant-info{
-    position: fixed;
-    right: 50px;
-    top: 50%;
-    height: 200px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255,.1);
-    border: 1px solid black;
-}
-#review-border{
-    display: block;
-    border-bottom: 2px solid black;
-}
-.review{
-    text-align: left;
-}
