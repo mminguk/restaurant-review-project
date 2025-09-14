@@ -1,10 +1,14 @@
 import Nav from '../Nav';
 import RestaurantCard from '../components/RestaurantCard';
 import Footer from '../footer';
+import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import '../styles/Category.css';
 import { china } from '../data/china-data';
 
 function China(){
+  const navigate=useNavigate();
+  const location=useLocation();
     return <>
         <Nav />
         <div id="category-article-top">
@@ -15,8 +19,12 @@ function China(){
               </div>
         </div>
         <div id="recommand">
-          {china.map((item)=>(
-            <RestaurantCard key={item.id} {...item} category="China" />
+          {china.map((it)=>(
+            <RestaurantCard key={it.id} {...it} onclick={()=>{
+              navigate(`${location.pathname}/DetailPage/${it.id}`,{state:{
+                    ...it
+              }});
+            }} />
           ))}
         </div>
         <Footer />

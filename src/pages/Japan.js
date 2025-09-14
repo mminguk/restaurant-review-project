@@ -1,9 +1,13 @@
 import Nav from "../Nav";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import '../styles/Category.css';
 import { japan } from "../data/japan-data";
 function Japan(){
+  const navigate=useNavigate();
+  const location=useLocation();
     return (
         <>
         <Nav />
@@ -15,8 +19,12 @@ function Japan(){
               </div>
         </div>
         <div id="recommand">
-          {japan.map((item)=>(
-            <RestaurantCard key={item.id} {...item} category="Japan" />
+          {japan.map((it)=>(
+            <RestaurantCard key={it.id} {...it} onclick={()=>{
+              navigate(`${location.pathname}/DetailPage/${it.id}`,{state:{
+                    ...it
+              }});
+            }} />
           ))}
         </div>
         <Footer />

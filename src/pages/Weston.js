@@ -1,9 +1,13 @@
 import Nav from "../Nav";
 import RestaurantCard from "../components/RestaurantCard";
 import Footer from "../footer";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import '../styles/Category.css';
 import { weston } from "../data/weston-data";
 function Weston(){
+  const navigate=useNavigate();
+  const location=useLocation();
     return (
         <>
         <Nav />
@@ -15,8 +19,12 @@ function Weston(){
               </div>
         </div>
         <div id="recommand">
-            {weston.map((item)=>(
-              <RestaurantCard key={item.id} {...item} category="Weston" />
+            {weston.map((it)=>(
+              <RestaurantCard key={it.id} {...it} onclick={()=>{
+              navigate(`${location.pathname}/DetailPage/${it.id}`,{state:{
+                    ...it
+              }});
+            }}  />
             ))}
         </div>
         <Footer />
