@@ -5,6 +5,7 @@ import China from './pages/China';
 import Japan from './pages/Japan';
 import Weston from './pages/Weston';
 import Dessert from './pages/Dessert';
+import ReviewCreate from './CRUD/ReviewCreate';
 import { Route,Routes, BrowserRouter } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import DetailPage from './pages/DetailPage';
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/Weston" element={<Weston />}></Route>
                 <Route path="/Dessert" element={<Dessert />}></Route>
                 <Route path="/:Category/DetailPage/:PageId" element={<DetailPage />}></Route>
+                <Route path="/:Category/DetailPage/Create" element={<ReviewCreate />}></Route>
             </Routes>
     </BrowserRouter>
   );

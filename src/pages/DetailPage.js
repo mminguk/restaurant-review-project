@@ -1,14 +1,18 @@
 import Footer from "../footer";
 import Nav from "../Nav";
 import '../styles/DetailPage.css';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-
+import { reviewdata } from "../data/review";
 
 
 function DetailPage(){
+    const navigate=useNavigate();
     const location=useLocation();
     const title=location.state.title;
     const address=location.state.address;
+    const PathName=location.state.routeName;
     return <>
         <Nav />
         <div id="detail-article-top">
@@ -30,14 +34,18 @@ function DetailPage(){
             <div id='restaurant-review'>
                 <span id="review-border"><h3>리뷰</h3></span>
                 <div id="review-container">
-                    <div className='review'>
-                        <h4>000</h4>
-                        <p>맛있습니다!! 또 오겠습니다</p>
+                    <div id="review-write">
+                        <p>리뷰를 작성해주세요!!</p>
+                        <input type="button" value="작성하기" onClick={()=>{
+                            navigate(`${PathName}/DetailPage/Create`);
+                        }} />
                     </div>
-                    <div className='review'>
-                        <h4>000</h4>
-                        <p>맛있습니다!! 또 오겠습니다</p>
-                    </div>
+                    {reviewdata.map((item)=>(
+                        <div className="review" key={item.id} >
+                            <h4>{item.name}</h4>
+                            <p>{item.review}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

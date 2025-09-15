@@ -17,9 +17,10 @@
     position: fixed;
     right: 50px;
     top: 50%;
+    width: 300px;
     height: 200px;
     padding: 10px;
-    background-color: rgba(255, 255, 255,.1);
+    background-color: lightgray;
     border: 1px solid black;
 }
 #review-border{
@@ -28,4 +29,17 @@
 }
 .review{
     text-align: left;
+    padding: 10px;
+}
+#review-write{
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+#review-desc{
+    width: 300px;
+}
+#review-submit{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
 }
