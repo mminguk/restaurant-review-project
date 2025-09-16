@@ -21,7 +21,7 @@ function App() {
                 <Route path="/Weston" element={<Weston />}></Route>
                 <Route path="/Dessert" element={<Dessert />}></Route>
                 <Route path="/:Category/DetailPage/:PageId" element={<DetailPage />}></Route>
-                <Route path="/:Category/DetailPage/Create" element={<ReviewCreate />}></Route>
+                <Route path="/:Category/DetailPage/Review/:PageId" element={<ReviewCreate />}></Route>
             </Routes>
     </BrowserRouter>
   );

@@ -15,3 +15,8 @@ export let reviewdata=[
         review:"자주 방문하게 됩니다"
     }
 ];
+
+export function addReview(_id,_name,_review){
+    reviewdata.push({id:_id,name:_name,review:_review});
+    
+}

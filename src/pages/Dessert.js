@@ -22,7 +22,8 @@ function Dessert(){
             {dessert.map((it)=>(
               <RestaurantCard key={it.id} {...it} onclick={()=>{
               navigate(`${location.pathname}/DetailPage/${it.id}`,{state:{
-                    ...it
+                    ...it,
+                    routeName:location.pathname
               }});
             }}  />
             ))}
