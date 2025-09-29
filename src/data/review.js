@@ -16,7 +16,3 @@ export let reviewdata=[
     }
 ];
 
-export function addReview(_id,_name,_review){
-    reviewdata.push({id:_id,name:_name,review:_review});
-    
-}

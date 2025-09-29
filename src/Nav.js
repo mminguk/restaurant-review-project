@@ -10,6 +10,7 @@ function Nav(){
             <span><Link to="/Japan">일식</Link></span>
             <span><Link to="/Weston">양식</Link></span>
             <span><Link to="/Dessert">디저트</Link></span>
+            <span><Link to="/Bookmark"><i className="fa-regular fa-bookmark"></i></Link></span>
           </nav>
         </div>
     );

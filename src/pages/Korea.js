@@ -23,7 +23,8 @@ function Korea(){
             <RestaurantCard key={it.id} {...it} onclick={()=>{
               navigate(`${location.pathname}/DetailPage/${it.id}`,{state:{
                     ...it,
-                    routeName:location.pathname
+                    routeName:location.pathname,
+                    isCreated:false
               }});
             }} />
           ))}

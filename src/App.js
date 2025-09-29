@@ -9,6 +9,7 @@ import ReviewCreate from './CRUD/ReviewCreate';
 import { Route,Routes, BrowserRouter } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import DetailPage from './pages/DetailPage';
+import Bookmark from './pages/Bookmark';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/Japan" element={<Japan />}></Route>
                 <Route path="/Weston" element={<Weston />}></Route>
                 <Route path="/Dessert" element={<Dessert />}></Route>
+                <Route path="/Bookmark" element={<Bookmark />}></Route>
                 <Route path="/:Category/DetailPage/:PageId" element={<DetailPage />}></Route>
                 <Route path="/:Category/DetailPage/Review/:PageId" element={<ReviewCreate />}></Route>
             </Routes>
