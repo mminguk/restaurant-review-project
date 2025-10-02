@@ -15,8 +15,7 @@ function DetailPage(){
             _address:address
         };
         const objString=JSON.stringify(obj);
-        window.localStorage.setItem('item',objString);
-
+        window.localStorage.setItem(title,objString);
     }
     return <>
         <Nav />

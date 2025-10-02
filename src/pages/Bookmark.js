@@ -2,18 +2,25 @@ import Nav from "../Nav";
 import Footer from "../footer";
 
 function Bookmark(){
-    const bookmarkItem=window.localStorage.getItem('item');
-    const title=JSON.parse(bookmarkItem)._title;
-    const address=JSON.parse(bookmarkItem)._address;
+    let bookmarkList=[];
+    for(let i=0;i<localStorage.length;i++){
+        let key=localStorage.key(i);
+        bookmarkList.push({
+            _title:JSON.parse(localStorage.getItem(key))._title, 
+            _address:JSON.parse(localStorage.getItem(key))._address
+        })
+    }
     return (
         <>
             <Nav />
             <h1>고객님의 북마크</h1>
             <hr />
-                <div>
-                    <h3>{title}</h3>
-                    <p>{address}</p>
+            {bookmarkList.map((item)=>(
+                <div key={item._title}>
+                    <h3>{item._title}</h3>
+                    <p>{item._address}</p>
                 </div>
+            ))}
             <Footer />
         </>
     )
