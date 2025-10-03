@@ -1,12 +1,15 @@
 #footer-wrap{
     height: auto;
     min-height: 100%;
+    padding-bottom: 100px;
 }
-
 footer{
-    padding: 10px;
-    text-align: center;
-    background-color: lightgray;
-    height: 50px;
+    height: 100px;
     position: relative;
+    transform: translateY(100%);
+    background-color: lightblue;
+    text-align: center;
+}
+footer p{
+    padding: 5px;
 }

@@ -21,6 +21,8 @@ function DetailPage(){
         <Nav />
         <div id="detail-article-top">
             <h1>{title}</h1>
+            <p>{address}</p>
+            <p>tel.041-0000-0000</p>
             <button id="bookmark" onClick={AddItemHandler}><i className="fa-regular fa-bookmark"></i></button>
         </div>
         <div id="detail-article-middle">
@@ -30,11 +32,6 @@ function DetailPage(){
                 <p>00메뉴 --- 10000원</p>
                 <p>00메뉴 --- 20000원</p>
                 <p>00메뉴 --- 30000원</p>
-            </div>
-            <div id='restaurant-info'>
-                <span><h3>{title}</h3></span>
-                <p>{address}</p>
-                <p>tel.041-0000-0000</p>
             </div>
             
         </div>

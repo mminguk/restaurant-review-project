@@ -28,23 +28,3 @@
     background-color: lightgray;
     border: 1px solid black;
 }
-#review-border{
-    display: block;
-    border-bottom: 2px solid black;
-}
-.review{
-    text-align: left;
-    padding: 10px;
-}
-#review-write{
-    border-bottom: 2px solid black;
-    padding: 10px;
-}
-#review-desc{
-    width: 300px;
-}
-#review-submit{
-    width: 300px;
-    display: block;
-    margin: 0 auto;
-}
